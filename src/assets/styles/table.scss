@@ -1,0 +1,54 @@
+.ant-table-content {
+    border-radius: 0.2rem;
+    font-size: 18px;
+}
+
+.ant-table-thead {
+    font-family: 'SourceHanSansSC-Bold';
+}
+
+@media (prefers-color-scheme: light) {
+    .ant-table {
+        background-color: $table-body-light;
+        color: $table-foreground-light;
+
+        * {
+            &::selection {
+                background-color: $table-selection-light;
+            }
+        }
+    }
+
+    .ant-table-thead > tr > th {
+        background-color: $table-header-light;
+        color: $table-foreground-light;
+        border-bottom-color: $table-selection-light;
+    }
+
+    .ant-table-row {
+        -webkit-tap-highlight-color: $table-selection-light;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .ant-table {
+        background-color: $table-body-dark;
+        color: $table-foreground-dark;
+
+        * {
+            &::selection {
+                background-color: $table-selection-dark;
+            }
+        }
+    }
+
+    .ant-table-thead > tr > th {
+        background-color: $table-header-dark;
+        color: $table-foreground-dark;
+        border-bottom-color: $table-selection-dark;
+    }
+
+    .ant-table-row {
+        -webkit-tap-highlight-color: $table-selection-dark;
+    }
+}

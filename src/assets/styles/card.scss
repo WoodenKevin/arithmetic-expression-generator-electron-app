@@ -1,0 +1,68 @@
+.card {
+    width: calc(100vw - 50px);
+    margin: 25px;
+    border-radius: 0.2rem;
+    font-size: 20px;
+}
+
+.cardTitle {
+    font: {
+        family: 'SourceHanSansSC-Bold';
+        size: 35px;
+    }
+    color: $accent-color;
+
+    &::selection {
+        color: $accent-color;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .card {
+        background-color: $card-background-light;
+        box-shadow: 0.05rem 0.05rem 0.05rem
+            rgba($color: $card-background-light, $alpha: 0.5);
+        color: $card-foreground-light;
+
+        * {
+            &::selection {
+                background-color: $card-selection-background-light;
+            }
+        }
+    }
+
+    .cardContent {
+        &::selection {
+            color: $card-foreground-light;
+        }
+    }
+
+    .ant-card-head {
+        border-bottom-color: $card-foreground-light;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .card {
+        background-color: $card-background-dark;
+        box-shadow: 0.05rem 0.05rem 0.05rem
+            rgba($color: $card-background-dark, $alpha: 0.5);
+        color: $card-foreground-dark;
+
+        * {
+            &::selection {
+                background-color: $card-selection-background-dark;
+            }
+        }
+    }
+
+    .cardContent {
+        &::selection {
+            color: $card-foreground-dark;
+        }
+    }
+
+    .ant-card-head {
+        border-bottom-color: $card-foreground-dark;
+    }
+}

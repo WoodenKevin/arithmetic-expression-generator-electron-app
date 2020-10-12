@@ -1,0 +1,94 @@
+@media (prefers-color-scheme: light) {
+    .ant-pagination-prev .ant-pagination-item-link,
+    .ant-pagination-next .ant-pagination-item-link {
+        background-color: $table-body-light;
+        color: $table-foreground-light;
+    }
+
+    .ant-pagination-disabled a,
+    .ant-pagination-disabled:hover a,
+    .ant-pagination-disabled:focus a,
+    .ant-pagination-disabled .ant-pagination-item-link,
+    .ant-pagination-disabled:hover .ant-pagination-item-link,
+    .ant-pagination-disabled:focus .ant-pagination-item-link {
+        border-color: $table-body-light;
+    }
+
+    .ant-pagination-item {
+        border-color: $table-body-light;
+        background-color: $table-body-light;
+    }
+
+    .ant-pagination-item a {
+        color: $table-foreground-light;
+    }
+
+    .ant-pagination-item-active {
+        background-color: $table-body-light;
+    }
+
+    .ant-pagination-jump-prev
+        .ant-pagination-item-container
+        .ant-pagination-item-ellipsis,
+    .ant-pagination-jump-next
+        .ant-pagination-item-container
+        .ant-pagination-item-ellipsis {
+        color: $card-foreground-light;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .ant-pagination-prev .ant-pagination-item-link,
+    .ant-pagination-next .ant-pagination-item-link {
+        background-color: $table-body-dark;
+        color: $table-foreground-dark;
+    }
+
+    .ant-pagination-disabled a,
+    .ant-pagination-disabled:hover a,
+    .ant-pagination-disabled:focus a,
+    .ant-pagination-disabled .ant-pagination-item-link,
+    .ant-pagination-disabled:hover .ant-pagination-item-link,
+    .ant-pagination-disabled:focus .ant-pagination-item-link {
+        border-color: $table-body-dark;
+    }
+
+    .ant-pagination-item {
+        border-color: $table-body-dark;
+        background-color: $table-body-dark;
+    }
+
+    .ant-pagination-item a {
+        color: $table-foreground-dark;
+    }
+
+    .ant-pagination-item-active {
+        background-color: $table-body-dark;
+    }
+
+    .ant-pagination-jump-prev
+        .ant-pagination-item-container
+        .ant-pagination-item-ellipsis,
+    .ant-pagination-jump-next
+        .ant-pagination-item-container
+        .ant-pagination-item-ellipsis {
+        color: $card-foreground-dark;
+    }
+}
+
+.ant-pagination-item-active {
+    border-color: $accent-color;
+
+    a {
+        color: $accent-color;
+    }
+}
+
+.ant-pagination-jump-prev
+    .ant-pagination-item-container
+    .ant-pagination-item-link-icon,
+.ant-pagination-jump-next
+    .ant-pagination-item-container
+    .ant-pagination-item-link-icon {
+    color: $accent-color;
+}

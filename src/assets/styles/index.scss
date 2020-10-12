@@ -1,0 +1,56 @@
+@import './colors.scss';
+@import './card.scss';
+@import './table.scss';
+@import './pagination.scss';
+
+* {
+    transition: {
+        property: all;
+        duration: 0.2s;
+        timing-function: ease-in-out;
+    }
+}
+
+html {
+    --antd-wave-shadow-color: $accent-color;
+}
+
+.btnGroup {
+    height: 50px;
+    margin: {
+        right: 25px;
+        bottom: 25px;
+    }
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    width: 120px;
+    height: 50px;
+    margin-left: 30px;
+    border: {
+        width: 0;
+        radius: 0.2rem;
+    }
+    font-size: 20px;
+    color: $accent-color;
+}
+
+@media (prefers-color-scheme: light) {
+    .btn {
+        background-color: $card-background-light;
+        box-shadow: 0.05rem 0.05rem 0.05rem
+            rgba($color: $card-background-light, $alpha: 0.5);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .btn {
+        background-color: $card-background-dark;
+        box-shadow: 0.05rem 0.05rem 0.05rem
+            rgba($color: $card-background-dark, $alpha: 0.5);
+    }
+}
