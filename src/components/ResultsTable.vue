@@ -1,7 +1,7 @@
 <template>
     <div id="ResultsTable">
         <a-table
-            :key="record => record.dataIndex"
+            :rowKey="(record, index) => index"
             :columns="columns"
             :data-source="data"
             :pagination="paginationConfig"

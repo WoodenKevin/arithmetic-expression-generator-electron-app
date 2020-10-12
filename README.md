@@ -1,29 +1,29 @@
-# generate-arithmetic-expression
+# Arithmetic Expression Generator
 
 ## Project setup
+
 ```
 npm install
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
-npm run serve
+npm run electron:serve
 ```
 
 ### Compiles and minifies for production
-```
-npm run build
-```
 
-### Run your unit tests
 ```
-npm run test:unit
+npm run electron:build
 ```
 
 ### Lints and fixes files
+
 ```
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Related repositories
+
+-   [arithmetic-expression-generator-nodejs-addon](https://github.com/WoodenKevin/arithmetic-expression-generator-nodejs-addon)

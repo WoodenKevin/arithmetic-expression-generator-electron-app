@@ -20,7 +20,7 @@ module.exports = {
             nodeIntegration: true,
             preload: 'src/preload.js',
             externals: ['arithmetic-expression-generator'],
-            nodeModulesPath: ['./addons'],
+            nodeModulesPath: ['./addons', './node_modules'],
             chainWebpackMainProcess: config => {
                 config.module
                     .rule('node')
@@ -50,7 +50,7 @@ module.exports = {
                     target: [
                         {
                             target: 'nsis',
-                            arch: ['x64'],
+                            arch: ['x64', 'ia32'],
                         },
                     ],
                 },
